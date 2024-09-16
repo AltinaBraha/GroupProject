@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 100vh;
+   /* background-image: url(Images/);*/
+   background-position: center;
+}
+
+.navbar nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 1px #089da1;
+    background: #fff;
+    position: flex;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.navbar nav ul{
+    list-style: none;    
+}
+
+.navbar nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.navbar nav li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar nav li a:hover{
+    color: #089da1;
+}
+
+.navbar nav .social_icon i{
+    color: #089da1;
+    cursor: pointer;
+}
+
+.navbar .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+
+.navbar .main h1{
+    position: relative;
+    font-size: 55px;
+    top: 80px;
+    left: 25px;
+}
+
+.navbar .main h1 span{
+    color: #089da1;
+}
+
+.navbar .main p{
+    width: 650px;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    top: 125px;
+    left: 25px;
+}
+
+.navbar .main .main_tag .main_btn{
+    background: #089da1;
+    padding: 10px 20px;
+    position: relative;
+    top: 200px;
+    left: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .main .main_img img{
+    width: 780px;
+    position: relative;
+    top: 90px;
+    left: 20px;
+}
+
+.services{
+    width: 100%;
+    height: auto;
+    margin: 35px 0;
+}
+
+.services .services_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.services .services_box .services_card{
+    text-align: center;
+    width: 310px;
+    height: auto;
+    box-shadow: 0 0 3px black;
+    padding: 15px 10px;
+}
+
+.services .services_box .services_card i{
+    color: black;
+    font-size: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.services .services_box .services_card h3{
+    margin-bottom: 10px;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h2{
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--bg-color);
+    font-weight: 500;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.new-arrival{
+    margin-top: 2rem;
+}
+
+.new-arrival .box{
+    position: relative;
+    overflow: hidden;
+    background: var(--second-color);
+    width: 150px; 
+    height: auto; 
+}
+
+.new-arrival .box img{
+    background: var(--second-color);
+    width: 100%; /* Fotoja i përshtatet gjerësisë së kutisë */
+    height: auto; /* Lartësia mbetet sipas raportit të gjerësisë */
+    object-fit: cover; /* Ruaj formën e përmbajtjes së fotos */
+}
+
+.new-arrival .box .contentt{
+    position: absolute;
+    top: -100%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hs1(0, 0%, 91%, 0,5);
+    overflow: hidden;
+}
+
+.new-arrival .box:hover .contentt{
+    top: 0;
+    transition: 0.2s;
+}
+
+.new .heading{
+    font: italic small-caps bold 46px cursive;
+    font-variant: small-caps slashed-zero;
+    font-family: cursive;
+    color: #333;
+}
+
+.kategori {
+    margin-top: 70px;
+    padding: 2rem;
+    background-color: #f4f4f4; 
+    text-align: center;
+}
+
+.kategori .tit {
+    font-size: 3rem;
+    font: "Brush Script MT", "Brush Script Std", cursive;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.kategori .kategori-botimet {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: nowrap; 
+    gap: 20px;
+}
+
+
+.kategori .botimet {
+    background-color: #fff;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 23%; 
+    overflow: hidden;
+}
+
+.kategori .botimet:hover {
+    transform: scale(1.05); 
+}
+
+.kategori .kt img {
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
+.kategori .kt h4 {
+    font-size: 1.4rem;
+    font: italic small-caps bold 16px/2 cursive;
+    color: #333;
+    margin: 10px 0;
+    padding: 0 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+@media (max-width: 1024px) {
+    .kategori .botimet {
+        width: 48%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .kategori .botimet {
+        width: 100%; 
+    }
+}
+
+
+
