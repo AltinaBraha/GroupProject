@@ -1,3 +1,7 @@
+body{
+    width: 100%;
+    background-color: #fff;
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +12,7 @@
 .navbar{
     width: 100%;
     height: 100vh;
-   /* background-image: url(Images/);*/
+    background-image: url(Images/background.jpg);
    background-position: center;
 }
 
@@ -24,10 +28,14 @@
     z-index: 100;
 }
 
+
 .navbar nav .logo img{
-    width: 100px;
+    height: 120px;
+    margin-right: 50%;
+    margin-left: 10px;
+    width: auto;
     cursor: pointer;
-    margin: 8px 0;
+
 }
 
 .navbar nav ul{
@@ -64,12 +72,13 @@
 .navbar .main h1{
     position: relative;
     font-size: 55px;
-    top: 80px;
-    left: 25px;
+    top: 40px;
+    right: 20px;
+    color: #d36b09da;
 }
 
 .navbar .main h1 span{
-    color: #089da1;
+    color: white;
 }
 
 .navbar .main p{
@@ -81,27 +90,23 @@
     left: 25px;
 }
 
-.navbar .main .main_tag .main_btn{
-    background: #089da1;
-    padding: 10px 20px;
-    position: relative;
-    top: 200px;
-    left: 25px;
-    color: #fff;
-    text-decoration: none;
-}
 
 .navbar .main .main_img img{
-    width: 780px;
+    width: 690px;
     position: relative;
-    top: 90px;
-    left: 20px;
+    top: 25px;
+    right: 30px;
 }
+
+
+
+/*SERVICES*/
 
 .services{
     width: 100%;
     height: auto;
-    margin: 35px 0;
+    margin: 140px 0;
+
 }
 
 .services .services_box{
@@ -145,6 +150,7 @@
     text-transform: uppercase;
 }
 
+/*Librat*/
 .new-arrival{
     margin-top: 2rem;
 }
@@ -159,28 +165,11 @@
 
 .new-arrival .box img{
     background: var(--second-color);
-    width: 100%; /* Fotoja i përshtatet gjerësisë së kutisë */
-    height: auto; /* Lartësia mbetet sipas raportit të gjerësisë */
-    object-fit: cover; /* Ruaj formën e përmbajtjes së fotos */
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
 }
 
-.new-arrival .box .contentt{
-    position: absolute;
-    top: -100%;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: hs1(0, 0%, 91%, 0,5);
-    overflow: hidden;
-}
-
-.new-arrival .box:hover .contentt{
-    top: 0;
-    transition: 0.2s;
-}
 
 .new .heading{
     font: italic small-caps bold 46px cursive;
@@ -189,17 +178,19 @@
     color: #333;
 }
 
+
+/*kategorit*/
 .kategori {
-    margin-top: 70px;
-    padding: 2rem;
+    margin-top: 100px; 
+    padding: 1.5rem; 
     background-color: #f4f4f4; 
     text-align: center;
 }
 
 .kategori .tit {
-    font-size: 3rem;
+    font-size: 2.5rem; 
     font: "Brush Script MT", "Brush Script Std", cursive;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem; 
     color: #333;
 }
 
@@ -207,53 +198,290 @@
     display: flex;
     justify-content: space-between; 
     flex-wrap: nowrap; 
-    gap: 20px;
+    gap: 15px; 
 }
-
 
 .kategori .botimet {
     background-color: #fff;
-    border-radius: 10px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease;
-    width: 23%; 
+    width: 20%; 
     overflow: hidden;
 }
 
 .kategori .botimet:hover {
-    transform: scale(1.05); 
+    transform: scale(1.03); 
 }
 
 .kategori .kt img {
     width: 100%; 
-    height: 250px; 
+    height: 200px; 
     object-fit: cover; 
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px;
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px;
 }
 
 .kategori .kt h4 {
-    font-size: 1.4rem;
-    font: italic small-caps bold 16px/2 cursive;
+    font-size: 1.2rem; 
+    font: italic small-caps bold 14px/1.5 cursive; 
     color: #333;
-    margin: 10px 0;
-    padding: 0 10px;
+    margin: 8px 0; 
+    padding: 0 8px; 
     text-align: center;
     font-weight: 600;
 }
 
+/*AUTORET*/
+.autoret{
+  background-color: #fff;
+}
+.autoret .heading{
+  color: #333;
+  margin-top: 30px;
+  font-size: 2.5rem; 
+  font-style: unset;
 
-@media (max-width: 1024px) {
-    .kategori .botimet {
-        width: 48%; 
-    }
+}
+.autoret .box-container {
+  display: grid;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: -30px;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr)); 
+  gap: 1.5rem;
+  padding: 5rem 0;
 }
 
-@media (max-width: 768px) {
-    .kategori .botimet {
-        width: 100%; 
-    }
+.autoret .box-container .box {
+  aspect-ratio: 1 / 1; 
+  padding: 3rem;
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+  background: #f5f2f2;
+  box-shadow: 0 .1rem .5rem rgba(0, 0, 0,.1);
+  border-radius: .5rem;
+}
+
+.autoret .box-container .box:hover{
+  transform: translate(-5%);
+  transition: .5s linear;
+  background: #fff;
+  border: .2rem solid #f8f8a1;
+}
+
+.autoret .box-container .box .image{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.autoret .box-container .box .image img{
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: -6rem;
+}
+
+.autoret .box-container .box .name{
+  padding: 1rem 0;
+}
+
+.autoret .box-container .box .name h1{
+  font-size: 1.7rem;
+  color: var(--black);
+}
+
+.autoret .box-container .box .name p{
+  color: #222;
+  font-size: 1.5rem;
+}
+
+.autoret .box-container .box .name p span{
+  text-transform: none;
+}
+
+.autoret .box-container .box p{
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.1;
+
+}
+
+/*FOOTER*/
+
+footer {
+  bottom: 0;
 }
 
 
+.footer-distributed {
+  background-color: #3a373d;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: rgb(240, 150, 90);
+}
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer-distributed .footer-center img {
+  margin-right: 10px;
+  width: 25px; 
+  height: 25px; 
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: rgb(240, 150, 90);
+  text-decoration: none;
+}
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+  background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+  color: #3F71EA;
+}
+/*footer ends*/
+
+@media (max-width:768px){
+  .testimonial .box-container{
+    padding: 1rem 0;
+  }
+
+  .testimonial .box-container .box{
+    margin-top: 3rem;
+  }
+  
+}
+
+@media (max-width: 700px) {
+
+  footer {
+      position: static;
+  }
+  header {
+      padding-top: 40px;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+  .footer-distributed .footer-center i {
+      margin-left: 0;
+  }
+}
