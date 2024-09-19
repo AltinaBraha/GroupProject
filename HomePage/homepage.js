@@ -1,4 +1,4 @@
-var swiper = new Swiper(".new-arrival", {
+var swiper = new Swiper(".new-book", {
     spaceBetween: 20,
     loop: true,
     autoplay: {
@@ -42,4 +42,15 @@ var swiper = new Swiper(".new-arrival", {
       clickable: true,
     },
   });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+  
+    menuToggle.addEventListener('click', function () {
+        navUl.classList.toggle('show');
+    });
+  });
+  
   

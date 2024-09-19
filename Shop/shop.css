@@ -1,0 +1,402 @@
+/*navbar*/
+body{
+
+    width: 100%;
+    background-color: #fff;
+}
+.navbar{
+    width: 100%;
+    height: 50%;
+    padding: 0;
+   background-position: center;
+}
+
+.navbar nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #c96523;
+    border-radius: red;
+    background: #fff;
+    position: flex;
+    left: 0;
+    z-index: 100;
+}
+
+
+.navbar nav .logo img{
+    height: 140px;
+    margin-right: 180%;
+    margin-left: -110px;
+    width: auto;
+    cursor: pointer;
+
+}
+
+.navbar nav ul{
+    list-style: none;    
+}
+
+.navbar nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.navbar nav li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar nav li a:hover{
+    color: #089da1;
+}
+
+.navbar nav .social_icon i{
+    color: #089da1;
+    cursor: pointer;
+}
+
+/*shop*/
+
+#menu{
+  background-color: #fff;
+  width: 100%;
+  margin-top: 60px;
+}
+.heading3{
+  text-align: center;
+  font-size: 30px;
+  color: #c96523;
+  font-weight: bold;
+  border-bottom: 2px solid #c96523;
+}
+
+#container2{
+  margin-top: 50px;
+
+}
+#menu .card{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.star i{
+  color: #c96523;
+}
+#menu h3{
+  text-align: center;
+  color: #c96523;
+  margin-top: 10px;
+  font-size: 20px;
+}
+#menu p{
+  font-size: 16px;
+  color: #c96523;
+  padding-top: 10px;
+}
+#menu p span{
+  float: right;
+  cursor: pointer;
+}
+#menu img{
+  width: 100%;
+  margin-top: 20px;
+}
+
+/*time for reading*/
+
+.bg-libri{
+  background-image: url(../HomePage/Images/blurred_photo.jpg) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  margin-top: 80px;
+  padding: 50px 0px;
+}
+
+.libri-title{
+  margin-bottom: 50px;
+  text-align: center;
+  color: #fff;
+}
+.libri-title section{
+  text-transform: uppercase;
+  font-size: 15px;
+  color: rgba(219, 209, 209, 0.5);
+}
+.libri-title h2{
+  font-size: 2.8rem;
+  margin-top: 4px;
+  font-family: 'Pushster', cursive;
+  text-transform: uppercase;
+}
+.libri-title hr{
+  margin: 15px auto;
+  width: 150px;
+  background: rgba(219, 209, 209, 0.5);
+}
+
+.libri-flex{
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.libri-flex .libri1{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.libri1 img{
+  width: 100px;
+  margin-right: 10px;
+}
+.libri1 h4{
+  text-transform: capitalize;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+
+.libri1 .line{
+  margin-top: 10px;
+  border-top: 1px dotted rgba(219, 209, 209, 0.5);
+  width: 52%;
+}
+
+
+
+/*FOOTER*/
+
+footer {
+    bottom: 0;
+  }
+  
+  
+  .footer-distributed {
+    background-color: #1d0c01;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .footer-distributed .footer-left {
+    width: 30%;
+  }
+  
+  .footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+  }
+  
+  .footer-distributed h3 span {
+    color: rgb(240, 150, 90);
+  }
+  
+  .footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+  }
+  
+  .footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-center {
+    width: 35%;
+  }
+  
+  .footer-distributed .footer-center div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .footer-distributed .footer-center img {
+    margin-right: 10px;
+    width: 25px; 
+    height: 25px; 
+  }
+  
+  .footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer-distributed .footer-center p a {
+    color: rgb(240, 150, 90);
+    text-decoration: none;
+  }
+  
+  .footer-distributed .footer-right {
+    width: 30%;
+  }
+  
+  .footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons {
+    margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+  }
+  
+  .footer-links a:hover {
+    color: #3F71EA;
+  }
+  /*footer ends*/
+  
+  /*RESPONSIVE*/
+  
+/*hamburger menu*/
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #1d0c01;
+}
+/*RESPONSIVE*/
+@media only screen and (max-width: 1200px) {
+  nav {
+      padding: 10px; 
+  }
+
+  nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      background-color: white;
+      width: 100%;
+      text-align: center;
+  }
+  nav ul li a {
+      color: black;
+  }   
+
+  nav ul.show {
+      display: flex;
+        position: relative;
+        z-index: 5; 
+  }
+
+  nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .menu-toggle {
+      display: flex;
+      bottom: 30px; 
+      right: 20px; 
+      z-index: 800;
+
+  }
+  nav .logo {
+      padding: 5px 0px;
+      height: 90px;
+      margin-bottom: 60px;
+      float: left;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+  }
+  .navbar .main .main_img img{
+    width: 690px;
+    position: relative;
+    bottom: 40px;
+    right: 20px;
+}
+}
+  @media(max-width:991px){
+    .libri-flex .libri1{
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 700px) {
+  
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+  }
