@@ -9,6 +9,25 @@
 </head>
 <body>
    
+   <section class="navbar" id="navbar">
+      <nav>
+          <div class="logo">
+              <img src="../HomePage/Images/logo.jpg">
+          </div>
+
+          <ul>
+              <li> <a href="../HomePage/homepage.html">Home</a></li>
+              <li> <a href="../Botime Artistike/botime.html">Botimet</a></li>
+              <li> <a href="../Shop/shop.html">Shop</a></li>
+              <li> <a href="../AboutUs/about-us.html">Rreth nesh</a></li>
+              <li> <a href="../ContactUs/contact.html">Kontakt</a></li>
+              <li> <a href="../loginsignup/login.html"><strong>Log In</strong></a></li>
+              <li> <a href="../loginsignup/signup.html"><strong>Register</strong></a></li>
+          </ul>
+          <div class="menu-toggle">&#9776;</div>
+      </nav>
+  </section>
+
  <div class="all">
 
 
@@ -25,21 +44,21 @@
       <div class="part2_box">
          <div class="part2_box_tx">
          <i class="fa-solid fa-phone"></i>
-         <h2>+383 4* *** ***</h2>
+         <h2>+383 49 400 711</h2>
          <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
       </div>
       </div>
       <div class="part2_box">
          <div class="part2_box_tx">
          <i class="fa-solid fa-envelope"></i>
-         <h2>email@gmail.com</h2>
+         <h2>bookstore@gmail.com</h2>
          <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
          </div>
       </div>
       <div class="part2_box3">
          <div class="part2_box_tx">
          <i class="fa-solid fa-location-dot"></i>
-         <h2>**** Kosova</h2>
+         <h2>Kosova, Prishtine</h2>
          <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
          </div>
       </div>
@@ -79,9 +98,58 @@
 
    <div class="part4">
    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d48069233.89760074!2d21.165502803117224!3d42.66319472032024!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee605110927%3A0x9365bfdf385eb95a!2sPristina!5e0!3m2!1sen!2s!4v1726701747436!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
    </div>
   
+   <footer class="footer-distributed">
+      <div class="footer-left">
+          <h3>Book<span> Store</span></h3>
+          <p class="footer-links">
+              <a href="../HomePage/homepage.html">Home</a>
+              <a href="../Botime Artistike/botime.html">Botimet</a> 
+              <a href="../Shop/shop.html">Shop</a>
+              <a href="../AboutUs/about-us.html">Rreth nesh</a> 
+              <a href="../ContactUs/contact.html">Kontakt</a> 
+              
+          </p>
+          <p class="footer-company-name">Copyright © 2024 <strong>Book Store</strong> All rights reserved</p>
+      </div>
+      <div class="footer-center">
+          <div>
+              <img src="../HomePage/Images/icons8-location-94.png" alt="Location">
+              <p><span>Kosove</span>Prishtine</p>
+          </div>
+          <div>
+              <img src="../HomePage/Images/icons8-phone-94.png" alt="Phone">
+              <p>+383 49 400 711</p>
+          </div>
+          <div>
+              <img src="../HomePage/Images/icons8-gmail-94.png" alt="Email">
+              <p><a href="mailto:expbytravelling@gmail.com">bookstore@gmail.com</a></p>
+          </div>
+      </div>
+      <div class="footer-right">
+          <p class="footer-company-about">
+              <span>About the library</span>
+              <strong>Book Store</strong> where every page turns into a new journey
+          </p>
+          <div class="footer-icons">
+              <a href="#"><img src="../HomePage/Images/icons8-facebook-94.png" width="35" height="35"></a>
+              <a href="#"><img src="../HomePage/Images/icons8-twitter-circled-94.png" width="35" height="35"alt=""></a>
+              <a href="#"><img src="../HomePage/Images/icons8-instagram-94.png"width="35" height="35" alt=""></a>
+          </div>
+      </div>
+  </footer>
+  
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navUl = document.querySelector('nav ul');
+
+      menuToggle.addEventListener('click', function () {
+          navUl.classList.toggle('show');
+      });
+  });
+  </script>
 </div>
 </body>
 </html>

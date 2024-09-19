@@ -8,8 +8,12 @@
 .navbar{
     width: 100%;
     height: 100vh;
-    background-image: url(Images/wooden-floor-with-dark-brown-wall-light-brown-floor_667286-2269.avif);
-   background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+    background-size: cover; /* Bën që imazhi të mbulojë tërë sipërfaqen e faqes */
+    background-position: center; /* Pozicionon imazhin në qendër të faqes */
+    background-image: url(Images/unnamed.jpg);
+    background-position: center;
 }
 
 .navbar nav{
@@ -18,7 +22,7 @@
     align-items: center;
     justify-content: space-around;
     border-bottom: 1px solid #c96523;
-    box-shadow: 0 0 1px #089da1;
+    box-shadow: 0 0 1px #583009;
     background: #fff;
     position: flex;
     left: 0;
@@ -50,7 +54,7 @@
 }
 
 .navbar nav li a:hover{
-    color: #089da1;
+    color: #582f17;
 }
 
 .navbar .main{
@@ -113,7 +117,7 @@
     text-align: center;
     width: 310px;
     height: auto;
-    box-shadow: 0 0 3px rgb(66, 35, 6);
+    box-shadow: 0 0 3px rgb(66, 32, 1);
     padding: 15px 10px;
 }
 
@@ -178,7 +182,7 @@
 
 /*kategorit*/
 .kategori {
-    margin-top: 100px; 
+    margin-top: 80px; 
     padding: 1.5rem; 
     background-color: #f4f4f4; 
     text-align: center;
@@ -237,7 +241,7 @@
 }
 .autoret .heading{
   color: #333;
-  margin-top: 50px;
+  margin-top: 80px;
   font-size: 2.5rem; 
   font-style: unset;
 
@@ -246,7 +250,7 @@
   display: grid;
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: -30px;
+  margin-top: 5px;
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr)); 
   gap: 1.5rem;
   padding: 5rem 0;
@@ -255,7 +259,7 @@
 .autoret .box-container .box {
   aspect-ratio: 1 / 1; 
   padding: 3rem;
-  margin-top: 20px;
+  margin-top: 10px;
   position: relative;
   text-align: center;
   background: #f5f2f2;
@@ -459,6 +463,10 @@ footer {
   font-size: 24px;
   cursor: pointer;
   color: #1d0c01;
+  position: absolute;
+  top: 55px; 
+  right: 20px;
+  z-index: 1000;
 }
 /*RESPONSIVE*/
 @media only screen and (max-width: 1200px) {
@@ -553,7 +561,6 @@ footer {
       top: 75px;
       left: 0;
   }
-
   .navbar .main .main_img img {
       width: 100%;
       bottom: 50px;
@@ -571,6 +578,14 @@ footer {
 
   .autoret .box-container .box{
     margin-top: 3rem;
+  }
+
+  .autoret .box-container .box p{
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 400;
+    line-height: 1.0;
+    text-align: justify;
   }
 }
 

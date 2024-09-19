@@ -49,13 +49,9 @@ body{
 }
 
 .navbar nav li a:hover{
-    color: #089da1;
+    color: #462a10;
 }
 
-.navbar nav .social_icon i{
-    color: #089da1;
-    cursor: pointer;
-}
 
 /*shop*/
 
@@ -69,7 +65,7 @@ body{
   font-size: 30px;
   color: #c96523;
   font-weight: bold;
-  border-bottom: 2px solid #c96523;
+  border-bottom: 2px solid #8d4719;
 }
 
 #container2{
@@ -84,7 +80,7 @@ body{
 }
 #menu h3{
   text-align: center;
-  color: #c96523;
+  color: #8d4312;
   margin-top: 10px;
   font-size: 20px;
 }
@@ -318,6 +314,10 @@ footer {
   font-size: 24px;
   cursor: pointer;
   color: #1d0c01;
+  position: absolute;
+  top: 55px; 
+  right: 20px;
+  z-index: 1000;
 }
 /*RESPONSIVE*/
 @media only screen and (max-width: 1200px) {
