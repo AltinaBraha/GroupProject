@@ -360,10 +360,12 @@ footer {
   }   
 
   nav ul.show {
-      display: flex;
-        position: relative;
-        z-index: 5; 
-  }
+    display: flex;
+      position: relative;
+      z-index: 5; 
+      margin-left: -40px;
+      margin-right: -5px;
+}
 
   nav ul li {
       margin-right: 0;
